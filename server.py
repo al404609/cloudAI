@@ -22,7 +22,7 @@ model_article = BertForSequenceClassification.from_pretrained(
 tokenizer = BertTokenizer.from_pretrained(saved_model_legal_path)
 
 # Mapeo de artículos
-unique_articles = ["1101", "1124", "1256", "1454", "1484", "1504", "1537", "1902", "1903", "1911"]  # Ejemplo, actualiza con tu lista
+unique_articles = ["1101", "1124", "1256", "1454", "1484", "1504", "1537", "1902", "1903", "1911"]  
 article_to_idx = {article: idx for idx, article in enumerate(unique_articles)}
 idx_to_article = {idx: article for article, idx in article_to_idx.items()}
 
